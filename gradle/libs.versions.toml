@@ -1,0 +1,22 @@
+[versions]
+spring-boot-version = "3.5.11"
+spring-dependency-management = "1.1.7"
+spock-groovy = "2.4-M6-groovy-4.0"
+testcontainers-version = "2.0.3"
+commons-compress-version = "1.28.0"
+commons-lang3-version = "3.20.0"
+
+[libraries]
+spock-core = { module = "org.spockframework:spock-core", version.ref = "spock-groovy" }
+spock-spring = { module = "org.spockframework:spock-spring", version.ref = "spock-groovy" }
+spock-bom = { module = "org.spockframework:spock-bom", version.ref = "spock-groovy" }
+testcontainers-bom = { module = "org.testcontainers:testcontainers-bom", version.ref = "testcontainers-version" }
+commons-compress = { module = "org.apache.commons:commons-compress", version.ref = "commons-compress-version" }
+commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3-version" }
+
+[bundles]
+spock-spring-integration-testing = ["spock-core", "spock-spring"]
+
+[plugins]
+springBootVersion = { id = "org.springframework.boot", version.ref = "spring-boot-version" }
+springDependencyManagement = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

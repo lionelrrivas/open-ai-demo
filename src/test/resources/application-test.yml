@@ -1,0 +1,13 @@
+spring:
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: test-api-key
+      chat:
+        base-url: http://localhost:12434
+    ollama:
+      chat:
+        options:
+          model: llama3.2:1b

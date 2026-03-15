@@ -1,0 +1,8 @@
+# Chat API
+
+### GET OpenAI Chat
+GET http://localhost:8080/open-ai-demo/api/chat/openai?message=how far is the moon from the sun?
+
+
+### GET Ollama Chat
+GET http://localhost:8080/open-ai-demo/api/chat/ollama?message=What was the cause of the american revolutionary war?
