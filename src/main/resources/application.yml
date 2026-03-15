@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: open-ai-demo
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: "test-api-key"
+      chat:
+        base-url: http://localhost:12434
+        options:
+          model: ai/gemma3
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2:1b
+      init:
+        pull-model-strategy: when_missing
+
+server:
+  servlet:
+    context-path: /open-ai-demo
