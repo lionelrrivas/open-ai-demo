@@ -18,10 +18,10 @@ repositories {
 	mavenCentral()
 }
 
-extra["springAiVersion"] = "1.1.2"
+extra["springAiVersion"] = "2.0.0"
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-webmvc")
 	implementation("org.springframework.ai:spring-ai-starter-model-openai")
 	implementation("org.springframework.ai:spring-ai-starter-model-ollama")
 
@@ -38,7 +38,7 @@ dependencies {
 	testImplementation("org.testcontainers:testcontainers-ollama")
 	testImplementation(libs.commons.compress)
 	testImplementation(libs.commons.lang3)
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
 	testImplementation("org.springframework.boot:spring-boot-testcontainers")
 	testImplementation("org.springframework.ai:spring-ai-spring-boot-testcontainers")
 

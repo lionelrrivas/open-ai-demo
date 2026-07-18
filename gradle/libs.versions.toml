@@ -1,8 +1,8 @@
 [versions]
-spring-boot-version = "3.5.11"
+spring-boot-version = "4.0.7"
 spring-dependency-management = "1.1.7"
-spock-groovy = "2.4-M6-groovy-4.0"
-testcontainers-version = "2.0.3"
+spock-groovy = "2.4-groovy-5.0"
+testcontainers-version = "2.0.5"
 commons-compress-version = "1.28.0"
 commons-lang3-version = "3.20.0"
 
