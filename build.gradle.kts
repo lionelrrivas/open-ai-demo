@@ -33,7 +33,6 @@ dependencies {
 	testImplementation(platform(libs.testcontainers.bom)) {
 		exclude(group = "org.apache.commons", module = "commons-compress")
 	}
-	testImplementation("org.testcontainers:testcontainers")
 	testImplementation("org.testcontainers:testcontainers-spock")
 	testImplementation("org.testcontainers:testcontainers-ollama")
 	testImplementation(libs.commons.compress)
